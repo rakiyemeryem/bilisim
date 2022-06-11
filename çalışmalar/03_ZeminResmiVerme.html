@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>CSS Giriş</title>
+    <link rel="stylesheet" href="" media="all">
+
+    <style>
+        .zeminResmi{
+            background-image: url("Zeminrengi.jpg");
+            background-repeat:repeat ;
+            /* kutunun tamamı zemin resmi ile kaplanır */
+        }
+
+        .zeminResmii{
+            background-image: url("Zeminrengi.jpg");
+            background-repeat:no-repeat ;
+            /* resim bir kere kulanılır */
+        }
+
+        .zeminResmiii{
+            background-image: url("Zeminrengi.jpg") ;
+            background-repeat:repeat-x;
+            /* resim kendini yatay eksende takrarlar */
+        }
+
+        .zeminResmiiii{
+            background-image: url("Zeminrengi.jpg") ;
+            background-repeat:repeat-y ;
+            /* resim kendini dik ekranda tekrarlar */
+        }
+
+        .kutu{
+            width: 300px;
+            height: 300px;
+            border:2px rgb(0, 255, 255);
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    Repeat :
+    <div class="zeminResmi kutu"></div>
+
+    No-Repeat :
+    <div class="zeminResmii kutu"></div>
+
+    Repeat-X:
+    <div class="zeminResmiii kutu"></div>
+
+    Repeat-Y:
+    <div class="zeminResmiiii kutu"></div>
+</body>
+</html>
